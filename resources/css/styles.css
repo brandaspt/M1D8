@@ -31,18 +31,18 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  min-height: 30px;
   margin: 10px 0;
 }
 
 .flex-container > * {
-  height: 100%;
+  min-height: 30px;
   margin: 0 10px;
 }
 
 button,
 input {
-  height: 100%;
+  min-height: 30px;
   padding: 0 10px;
 }
 
