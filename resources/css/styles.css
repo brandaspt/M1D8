@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 20px;
+}
+h1,
+h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 10px 0;
+}
+
+.flex-container > * {
+  height: 100%;
+  margin: 0 10px;
+}
+
+button,
+input {
+  height: 100%;
+  padding: 0 10px;
+}
+
+#color-all,
+#color-current {
+  padding: 0;
+}
+
+.remove-btn {
+  height: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}

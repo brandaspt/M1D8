@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to your personal Task List!</h1>
+      <ol>
+        <li>Insert task content</li>
+        <li>Pick a labelling color</li>
+        <li>Press "Add new task"</li>
+      </ol>
+    </header>
+
+    <main>
+      <div class="flex-container">
+        <input type="text" id="new-task" placeholder="insert task" />
+        <label for="color-current"
+          >Label:
+          <input
+            type="color"
+            placeholder="Color"
+            id="color-current"
+            value="#ffffff"
+        /></label>
+
+        <button id="add-task-btn">Add new task</button>
+      </div>
+      <hr />
+      <div class="flex-container">
+        <button id="remove-first-btn">Remove first task</button>
+        <button id="remove-last-btn">Remove last task</button>
+        <button id="print-array-btn">Print tasks array</button>
+        <button id="sort-btn">Sort tasks</button>
+      </div>
+      <hr />
+      <div class="flex-container">
+        <label for="color-all"
+          >Label all tasks:
+          <input type="color" placeholder="Color" id="color-all"
+        /></label>
+      </div>
+
+      <section>
+        <h2>Tasks:</h2>
+        <hr />
+        <ul id="task-list"></ul>
+      </section>
+    </main>
+
+    <script src="./resources/js/app.js"></script>
+  </body>
+</html>
