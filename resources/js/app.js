@@ -114,7 +114,11 @@ const sortBtn = document.getElementById("sort-btn")
 
 const bubbleSort = () => {
   const sortedTasks = getTasksAsArray().sort((a, b) =>
-    a.text > b.text ? 1 : a.text < b.text ? -1 : 0
+    a.text.toLowerCase() > b.text.toLowerCase()
+      ? 1
+      : a.text.toLowerCase() < b.text.toLowerCase()
+      ? -1
+      : 0
   )
   console.log(sortedTasks)
   taskListUl.innerHTML = ""
